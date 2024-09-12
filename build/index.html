@@ -1,0 +1,2063 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body
+    class="bg-[rgb(33,36,40)] font-myFont text-lg text-[rgb(179,189,203)] relative"
+  >
+    <!-- Header Section Start -->
+    <header id="header">
+      <div class="box flex justify-between items-center px-5 py-3 lg:px-7 lg:py-4">
+        <!-- header left -->
+        <div class="logo flex gap-1 items-center">
+          <div class="logo-img">
+            <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24"><path fill="#5fc9f8" d="M5.9 15.375L2.5 12l11-11h6.775zM13.5 23l-5.925-5.925L13.5 11.15h6.775l-5.925 5.925L20.275 23z"/></svg>
+           
+          </div>
+          <div class="logo-name font-bold">Flutter is ❤️</div>
+        </div>
+        <!-- header right -->
+        <nav
+          id="nav-bar"
+          class="absolute -left-[67%] lg:static top-0 duration-300 w-2/3 lg:w-auto h-full px-4 lg:px-0 py-8 lg:py-0 bg-[rgb(33,36,40)] lg:bg-transparent"
+        >
+          <div class="lg:hidden">
+            <svg
+              id="cross"
+              class="ml-auto"
+              xmlns="http://www.w3.org/2000/svg"
+              width="3em"
+              height="3em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#ff0000"
+                d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"
+              />
+            </svg>
+          </div>
+          <ul class="flex text-sm flex-col lg:flex-row lg:items-center gap-7">
+            <li><a class="hover:text-white duration-300" href="">HOME</a></li>
+            <li>
+              <a class="hover:text-white duration-300" href="#feature"
+                >FEATURES</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-white duration-300 uppercase" href="#my-portfolio"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-white duration-300" href="#my-resume"
+                >EDSKILLS</a
+              >
+            </li>
+            <!-- <li>
+              <a class="hover:text-white duration-300" href="#clients-section">CLIENTS</a>
+            </li> -->
+            <li>
+              <a class="hover:text-white duration-300" href="#pricing-section">PRICING</a>
+            </li>
+            <!-- <li><a class="hover:text-white duration-300" href="#blog-section">BLOG</a></li>
+            <li> -->
+              <a class="hover:text-white duration-300" href="#form-section">CONTACT</a>
+            </li>
+            <li>
+              <a
+                class="inline-block text-subtitle-red px-4 py-3 shadow-primary-shadow rounded-lg hover:-translate-y-2 duration-300"
+                href="https://drive.google.com/drive/folders/1sUeRZtoNMoLfYUv_caIW2i7jRMKO2d4U" target="_blank"
+                ><span>Résumé</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div id="humbargar" class="lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2.5em"
+            height="2.5em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#ff0000"
+              d="M4 7q-.425 0-.712-.288T3 6t.288-.712T4 5h16q.425 0 .713.288T21 6t-.288.713T20 7zm0 12q-.425 0-.712-.288T3 18t.288-.712T4 17h16q.425 0 .713.288T21 18t-.288.713T20 19zm0-6q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13z"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Main Section Start -->
+    <main class="container ">
+      <!-- Hero Section Start -->
+      <section class="my-14 md:my-24">
+        
+          <div
+            class="hero-container block md:flex md:flex-row-reverse justify-between items-center"
+          >
+            <!-- hero right -->
+            <div class="hero-right w-full md:w-[40%] ">
+              <div
+                class="bg-[rgb(31,33,37)] w-full h-[65vh] lg:h-[562px] rounded-lg shadow-primary-shadow relative -z-10"
+              >
+                <img class="absolute bottom-[52px] scale-125 lg:scale-105 lg:-top-[165px] overflow-x-hidden w-[90%] lg:w-full" src="./images/ProfileImage.png" alt="" />
+              </div>
+            </div>
+
+            <!-- hero left -->
+            <div class="hero-left w-full md:w-[52%] my-7 md:my-0">
+              <p class="uppercase font-medium text-sm md:text-lg">
+                Hey, I’m <span class="text-subtitle-red">Atiq Ahmad</span>
+              </p>
+              <h1 class="py-7 text-white text-3xl md:text-6xl">
+                A Professional <br />
+                <span id="text-animated" class="text-subtitle-red"></span>
+              </h1>
+              <p class="leading-9 text-base md:text-lg">
+                Skilled Flutter developer with a strong track record of building robust, scalable mobile applications, delivering seamless cross-platform performance, and effective API integration.
+              </p>
+              <div
+                class="hero-icons mt-8 md:mt-52 block md:flex justify-between items-center"
+              >
+                <div class="right">
+                  <span>FIND ME ON</span>
+                  <div class="social-icons flex gap-4 mt-4">
+                     <!-- WhatsApp svg -->
+                     <a href="https://wa.me/+923209046755" target="_blank">
+                      <div
+                        class="whatsApp p-4 shadow-primary-shadow rounded-lg hover:-translate-y-1 duration-300"
+                      >
+                      <img width="25px" src="./images/whatsapp-svgrepo-com.svg" alt="">
+                      </div>
+                    </a>
+                      <!-- linkind svg -->
+                      <a href="https://www.linkedin.com/in/atiqahmad919/" target="_blank"> <div
+                        class="insta p-4 shadow-primary-shadow rounded-lg hover:-translate-y-1 duration-300"
+                      >
+                      <img width="25px" src="./images/linkedin-icon.svg" alt="">
+                      </div></a>
+                       <!-- GitHub svg -->
+                    <a href="https://github.com/atiqahmad919" target="_blank"><div
+                      class="linkind p-4 shadow-primary-shadow rounded-lg hover:-translate-y-1 duration-300"
+                    >
+                    <img width="25px" src="./images/github-svgrepo-com.svg" alt="">
+                    </div></a>
+                    <!-- Gmail svg -->
+                    <a href="mailto:atiqahmad919@gmail.com" target="_blank">
+                      <div
+                      class="gmail p-4 shadow-primary-shadow rounded-lg hover:-translate-y-1 duration-300"
+                    >
+                    <img width="25px" src="./images/gmail-svgrepo-com.svg" alt="">
+                    </div>
+                    </a>
+                     <!-- PlayStore svg -->
+                     <a href="https://play.google.com/store/apps/developer?id=Atiq+Ahmad&hl=en" target="_blank">
+                      <div
+                        class="fb p-4 shadow-primary-shadow rounded-lg hover:-translate-y-1 duration-300"
+                      >
+                       <img width="25px" src="./images/playstore.svg" alt="">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+        </div>
+      </section>
+      <!-- Hero Section End -->
+
+      <!-- Line -->
+      <div class="line w-full h-[1px] bg-black"></div>
+
+      <!-- Features Section Start -->
+      <section id="feature" class="py-10 lg:pt-32 lg:pb-20">
+        <div class="feature-container">
+          <div class="text-sm text-subtitle-red">FEATURES</div>
+          <h1 class="my-3">What I Do</h1>
+          <!-- cards container -->
+          <div
+            class="cards-container grid md:grid-cols-2 lg:grid-cols-3 my-16 gap-10"
+          >
+            <!-- card start 1-->
+            <div
+              class="group card px-7 py-14 rounded-lg shadow-primary-shadow"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="100"
+            >
+              <div class="card-body group-hover:-translate-y-5 duration-500">
+                <div class="icon">
+                <svg fill="#ff0000" width="3em" height="3em" viewBox="0 0 512 512" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#ff0000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="mobile_phone-smartphone-phone-heart-love"> <path d="M305.376,217.024c10.275,13.376,8.235,32.626-3.614,44.605l-32.5,32.855c-7.318,7.398-19.204,7.398-26.522,0l-32.5-32.855 c-11.85-11.979-13.889-31.229-3.614-44.605c12.415-16.161,35.529-17.243,49.375-3.245 C269.847,199.782,292.961,200.863,305.376,217.024z M407.405,111.248l-19.953,20.461c-1.02,1.048-2.188,1.874-3.414,2.594v305.734 c0,22.055-17.945,40-40,40h-176c-22.055,0-40-17.945-40-40v-21.692c-1.257-0.729-2.456-1.57-3.5-2.644l-19.945-20.453 c-10.133-10.398-11.266-26.375-2.625-37.18c4.813-6.008,11.914-9.672,19.484-10.039c2.223-0.123,4.43,0.105,6.586,0.553V72.037 c0-22.055,17.945-40,40-40h176c19.542,0,35.793,14.108,39.258,32.662c2.343-0.548,4.771-0.796,7.25-0.669 c7.57,0.367,14.672,4.031,19.484,10.039c0,0,0,0,0.008,0C418.67,84.866,417.545,100.85,407.405,111.248z M224.037,440h64 c8.837,0,16-7.164,16-16s-7.163-16-16-16h-64c-8.836,0-16,7.164-16,16S215.201,440,224.037,440z M368.037,376V134.345 c-1.257-0.729-2.456-1.57-3.5-2.644l-19.945-20.453c-6.283-6.447-9.088-15.038-8.267-23.211H144.037v260.528 c2.114-0.432,4.284-0.656,6.508-0.536c7.57,0.367,14.672,4.031,19.484,10.039c0,0,0,0,0.008,0 c4.141,5.179,5.977,11.554,5.709,17.931H368.037z M135.998,404.537l19.953-20.461c4.438-4.547,5.133-11.578,1.586-16.008 c-1.977-2.469-4.734-3.906-7.773-4.055c-2.991-0.147-5.826,0.98-7.983,3.156c-1.455,1.512-3.478,2.469-5.744,2.469 c-0.014,0-0.025-0.008-0.039-0.008l0,0c-0.027,0-0.052-0.016-0.079-0.016c-1.062-0.017-2.08-0.217-3.002-0.608 c-0.624-0.26-1.134-0.719-1.676-1.129c-0.279-0.215-0.622-0.344-0.87-0.593c-0.029-0.029-0.071-0.038-0.099-0.067 c-2.039-2.086-4.688-3.219-7.516-3.219c-0.172,0-0.344,0.008-0.523,0.016c-3.031,0.148-5.797,1.586-7.773,4.055 c-3.539,4.43-2.844,11.461,1.586,16.008L135.998,404.537z M397.537,84.069c-1.977-2.469-4.734-3.906-7.773-4.055 c-2.976-0.116-5.826,0.981-7.983,3.157c-1.455,1.511-3.478,2.468-5.744,2.468c-0.014,0-0.025-0.008-0.039-0.008l0,0 c-0.027,0-0.052-0.016-0.079-0.016c-1.062-0.017-2.08-0.217-3.002-0.608c-0.624-0.26-1.134-0.719-1.676-1.129 c-0.279-0.215-0.622-0.344-0.87-0.593c-0.029-0.029-0.071-0.038-0.099-0.067c-2.039-2.086-4.688-3.219-7.516-3.219 c-0.172,0-0.344,0.008-0.523,0.016c-3.031,0.148-5.797,1.586-7.773,4.055c-3.539,4.43-2.844,11.461,1.586,16.008l19.953,20.461 l19.953-20.461C400.389,95.53,401.084,88.498,397.537,84.069z"></path> </g> <g id="Layer_1"></g> </g></svg>
+                </div>
+                <h3 class="py-5">App Development </h3>
+                <p>
+                  I create high-performance mobile applications with a focus on user experience and cross-platform functionality. My expertise ensures seamless, scalable apps for both iOS and Android
+                </p>
+                <div
+                  class="pt-5 opacity-0 group-hover:opacity-100 duration-500"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5em"
+                    height="1.5em"
+                    viewBox="0 0 15 15"
+                  >
+                    <path
+                      fill="#ff0000"
+                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- card end -->
+            <!-- card start 2-->
+            <div
+              class="group card px-7 py-14 rounded-lg shadow-primary-shadow"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="300"
+            >
+              <div class="card-body group-hover:-translate-y-5 duration-500">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="3em"
+                    height="3em"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="#ff0000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                    >
+                      <path
+                        stroke-dasharray="6"
+                        stroke-dashoffset="6"
+                        d="M12 21H17M12 21H7"
+                      >
+                        <animate
+                          fill="freeze"
+                          attributeName="stroke-dashoffset"
+                          dur="0.3s"
+                          values="6;0"
+                        />
+                      </path>
+                      <path
+                        stroke-dasharray="6"
+                        stroke-dashoffset="6"
+                        d="M12 21V17"
+                      >
+                        <animate
+                          fill="freeze"
+                          attributeName="stroke-dashoffset"
+                          dur="0.2s"
+                          values="6;0"
+                        />
+                      </path>
+                      <path
+                        stroke-dasharray="64"
+                        stroke-dashoffset="64"
+                        d="M12 17H3V5H21V17Z"
+                      >
+                        <animate
+                          fill="freeze"
+                          attributeName="stroke-dashoffset"
+                          begin="0.3s"
+                          dur="0.6s"
+                          values="64;0"
+                        />
+                      </path>
+                    </g>
+                  </svg>
+                </div>
+                <h3 class="py-5">Front-End Web Development </h3>
+                <p>
+                  I craft responsive and visually appealing websites with a focus on performance and accessibility. By leveraging modern web technologies, I ensure smooth user interactions across all devices.
+                </p>
+                <div
+                  class="pt-5 opacity-0 group-hover:opacity-100 duration-500"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5em"
+                    height="1.5em"
+                    viewBox="0 0 15 15"
+                  >
+                    <path
+                      fill="#ff0000"
+                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- card end -->
+            <!-- card start 3-->
+            <div
+              class="group card px-7 py-14 rounded-lg shadow-primary-shadow"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="500"
+            >
+              <div class="card-body group-hover:-translate-y-5 duration-500">
+                <div class="icon">
+                  <svg width="3em" height="3em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ff0000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M7 10V12C7 12.6667 7.4 14 9 14C10.6 14 11 12.6667 11 12V10M14 10L15.5 12M17 14L15.5 12M15.5 12L17 10M15.5 12L14 14" stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><circle cx="12" cy="12" r="10" stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></circle></g></svg>
+                </div>
+                <h3 class="py-5">UI/UX Designing</h3>
+                <p>
+                  I design intuitive, user-centered interfaces that enhance engagement and functionality. My approach ensures seamless user experiences through creative, thoughtful design solutions.
+                </p>
+                <div
+                  class="pt-5 opacity-0 group-hover:opacity-100 duration-500"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5em"
+                    height="1.5em"
+                    viewBox="0 0 15 15"
+                  >
+                    <path
+                      fill="#ff0000"
+                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- card end -->
+          </div>
+        </div>
+      </section>
+      <!-- Feature Section End -->
+
+      <!-- Line -->
+      <div class="line w-full h-[1px] bg-black"></div>
+
+      <!-- Projects Section Start -->
+      <section id="my-portfolio" class="py-10 lg:pt-32 lg:pb-20">
+        <div class="my-projects text-center">
+          <div class="text-sm text-subtitle-red uppercase">
+           projects completed so far
+          </div>
+          <h1 class="my-3">My Projects</h1>
+          <!-- cards container -->
+          <div
+            class="cards-container grid md:grid-cols-2 lg:grid-cols-3 my-16 gap-10"
+          >
+            <!-- card start 1-->
+            <div
+            class="group card px-7 py-9 rounded-3xl shadow-primary-shadow"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="100"
+          >
+            <div class="card-body duration-500">
+              <div class="img overflow-hidden rounded-2xl">
+                <img
+                  class="group-hover:scale-110 duration-500 rounded-2xl"
+                  src="./images/My-Resume-App.png"
+                  alt=""
+                />
+              </div>
+              
+              <h3
+                class="text-left group/arrow hover:text-subtitle-red duration-500 pt-5"
+              >
+              Atiq Ahmad CV on Playstore
+                <span
+                  class="inline-block opacity-0 group-hover/arrow:opacity-100 duration-500"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="#ff0000"
+                      d="m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6t.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17t-.712-.288T16 16z"
+                    /></svg
+                ></span>
+              </h3>
+            </div>
+          </div>          
+            <!-- card start 2-->
+            <div
+              class="group card px-7 py-9 rounded-3xl shadow-primary-shadow"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="100"
+            >
+              <div class="card-body duration-500">
+                <div class="img overflow-hidden rounded-2xl">
+                  <img
+                    class="group-hover:scale-110 duration-500 rounded-2xl"
+                    src="./images/FDS.png"
+                    alt=""
+                  />
+                </div>
+                
+                <h3
+                  class="text-left group/arrow hover:text-subtitle-red duration-500 pt-5"
+                >
+                Fast Delivery Service
+                  <span
+                    class="inline-block opacity-0 group-hover/arrow:opacity-100 duration-500"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#ff0000"
+                        d="m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6t.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17t-.712-.288T16 16z"
+                      /></svg
+                  ></span>
+                </h3>
+              </div>
+            </div>
+            <!-- card start 3-->
+
+            <div
+              class="group card px-7 py-9 rounded-3xl shadow-primary-shadow"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="100"
+            >
+              <div class="card-body duration-500">
+                <div class="img overflow-hidden rounded-2xl">
+                  <img
+                    class="group-hover:scale-110 duration-500 rounded-2xl"
+                    src="./images/Pashto-Quotes.png"
+                    alt=""
+                  />
+                </div>
+                
+                <h3
+                  class="text-left group/arrow hover:text-subtitle-red duration-500 pt-5"
+                >
+                Pashto Quotes App
+                  <span
+                    class="inline-block opacity-0 group-hover/arrow:opacity-100 duration-500"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#ff0000"
+                        d="m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6t.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17t-.712-.288T16 16z"
+                      /></svg
+                  ></span>
+                </h3>
+              </div>
+            </div>
+            <!-- card start 4-->
+            <div
+            class="group card px-7 py-9 rounded-3xl shadow-primary-shadow"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="100"
+          >
+            <div class="card-body duration-500">
+              <div class="img overflow-hidden rounded-2xl">
+                <img
+                  class="group-hover:scale-110 duration-500 rounded-2xl"
+                  src="./images/Fast-Food-Point.png"
+                  alt=""
+                />
+              </div>
+              
+              <h3
+                class="text-left group/arrow hover:text-subtitle-red duration-500 pt-5"
+              >
+              Fast Food Point
+                <span
+                  class="inline-block opacity-0 group-hover/arrow:opacity-100 duration-500"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="#ff0000"
+                      d="m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6t.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17t-.712-.288T16 16z"
+                    /></svg
+                ></span>
+              </h3>
+            </div>
+          </div>
+           
+           
+           
+          </div>
+        </div>
+      </section>
+      <!-- Projects Section End -->
+
+      <!-- Line -->
+      <div class="line w-full h-[1px] bg-black"></div>
+
+      <!-- Resume Section Start-->
+      <section id="my-resume" class="py-10 lg:pt-32 lg:pb-20">
+        <div class="my-resume text-center">
+          <div class="text-sm text-subtitle-red uppercase">
+            Experience Since Jan 2023 <!-- change is JS -->
+          </div>
+          <h1 class="my-3 text-4xl lg:text-6xl">My Resume</h1>
+          <!-- btns container -->
+          <ul
+            class="resume-bts grid grid-cols-1 lg:grid-cols-4 shadow-primary-shadow rounded-xl mt-14 mb-5"
+          >
+            <!-- btn-1 -->
+            <li
+              id="education"
+              class="px-5 py-7 rounded-xl shadow-primary-shadow text-subtitle-red hover:shadow-primary-shadow hover:text-subtitle-red duration-500 cursor-pointer"
+            >
+              Education
+            </li>
+            <!-- btn-2 -->
+            <li
+              id="professtional-skills"
+              class="px-5 py-7 rounded-xl hover:shadow-primary-shadow hover:text-subtitle-red duration-500 cursor-pointer"
+            >
+              Professtional skills
+            </li>
+            <!-- btn-3 -->
+            <li
+              id="experience"
+              class="px-5 py-7 hover:shadow-primary-shadow hover:text-subtitle-red duration-500 rounded-xl cursor-pointer"
+            >
+              Experience
+            </li>
+            <!-- btn-4 -->
+            <li
+              id="interview"
+              class="px-5 py-7 rounded-xl hover:shadow-primary-shadow hover:text-subtitle-red duration-500 cursor-pointer"
+            >
+              Interview
+            </li>
+          </ul>
+          <!-- details -->
+          <section id="view" class="my-8">
+            <div class="contents-boxs grid grid-cols-1 lg:grid-cols-2 gap-10">
+              <!-- left box -->
+              <div class="content-box text-left">
+                <div>
+                  <div class="text-sm text-subtitle-red uppercase">
+                    2007 - 2010
+                  </div>
+                  <h2 class="my-3">Education Quality</h2>
+                </div>
+                <div class="border-l-[5px] border-[rgb(23,25,28)] pl-8 mt-16">
+                  <div class="card shadow-primary-shadow px-5 py-12 rounded-xl">
+                    <div class="flex justify-between items-center">
+                      <div>
+                        <h3 class="text-white">
+                          Personal Portfolio April Fools
+                        </h3>
+                        <div class="text-sm">
+                          University of DVI (1997 - 2001)
+                        </div>
+                      </div>
+                      <div
+                        class="shadow-primary-shadow text-subtitle-red px-5 h-9 rounded-lg flex justify-center items-center"
+                      >
+                        <span> 4.3/5 </span>
+                      </div>
+                    </div>
+                    <!-- line -->
+                    <div class="line w-full h-[1px] bg-black mt-14 mb-6"></div>
+                    <p class="">
+                      The education should be very interactual. Ut tincidunt est
+                      ac dolor aliquam sodales. Phasellus sed mauris hendrerit,
+                      laoreet sem in, lobortis mauris hendrerit ante.
+                    </p>
+                  </div>
+                  <div
+                    class="card shadow-primary-shadow px-5 py-12 rounded-xl mt-20"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div>
+                        <h3 class="text-white">
+                          Personal Portfolio April Fools
+                        </h3>
+                        <div class="text-sm">
+                          University of DVI (1997 - 2001)
+                        </div>
+                      </div>
+                      <div
+                        class="shadow-primary-shadow text-subtitle-red px-5 h-9 rounded-lg flex justify-center items-center"
+                      >
+                        <span> 4.3/5 </span>
+                      </div>
+                    </div>
+                    <!-- line -->
+                    <div class="line w-full h-[1px] bg-black mt-14 mb-6"></div>
+                    <p class="">
+                      The education should be very interactual. Ut tincidunt est
+                      ac dolor aliquam sodales. Phasellus sed mauris hendrerit,
+                      laoreet sem in, lobortis mauris hendrerit ante.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- right box -->
+              <div class="content-box text-left">
+                <div>
+                  <div class="text-sm text-subtitle-red uppercase">
+                    2007 - 2010
+                  </div>
+                  <h2 class="my-3">Education Quality</h2>
+                </div>
+                <div class="border-l-[5px] border-[rgb(23,25,28)] pl-8 mt-16">
+                  <div class="card shadow-primary-shadow px-5 py-12 rounded-xl">
+                    <div class="flex justify-between items-center">
+                      <div>
+                        <h3 class="text-white">
+                          Personal Portfolio April Fools
+                        </h3>
+                        <div class="text-sm">
+                          University of DVI (1997 - 2001)
+                        </div>
+                      </div>
+                      <div
+                        class="shadow-primary-shadow text-subtitle-red px-5 h-9 rounded-lg flex justify-center items-center"
+                      >
+                        <span> 4.3/5 </span>
+                      </div>
+                    </div>
+                    <!-- line -->
+                    <div class="line w-full h-[1px] bg-black mt-14 mb-6"></div>
+                    <p class="">
+                      The education should be very interactual. Ut tincidunt est
+                      ac dolor aliquam sodales. Phasellus sed mauris hendrerit,
+                      laoreet sem in, lobortis mauris hendrerit ante.
+                    </p>
+                  </div>
+                  <div
+                    class="card shadow-primary-shadow px-5 py-12 rounded-xl mt-20"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div>
+                        <h3 class="text-white">
+                          Personal Portfolio April Fools
+                        </h3>
+                        <div class="text-sm">
+                          University of DVI (1997 - 2001)
+                        </div>
+                      </div>
+                      <div
+                        class="shadow-primary-shadow text-subtitle-red px-5 h-9 rounded-lg flex justify-center items-center"
+                      >
+                        <span> 4.3/5 </span>
+                      </div>
+                    </div>
+                    <!-- line -->
+                    <div class="line w-full h-[1px] bg-black mt-14 mb-6"></div>
+                    <p class="">
+                      The education should be very interactual. Ut tincidunt est
+                      ac dolor aliquam sodales. Phasellus sed mauris hendrerit,
+                      laoreet sem in, lobortis mauris hendrerit ante.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- Resume Section End-->
+
+      <!-- Line -->
+      <div class="line w-full h-[1px] bg-black"></div>
+
+      <!-- Testimonial Section Start -->
+      <section id="testimonial" class="py-10 lg:pt-32 lg:pb-20">
+        <div class="testimonial-contents text-center">
+          <div class="text-sm text-subtitle-red uppercase">WHAT CLIENT SAY</div>
+          <h1 class="my-3 text-4xl lg:text-6xl">Testimonial</h1>
+          <!-- Cards Section -->
+          <div class="cards-section py-10">
+            <!-- Swiper -->
+            <div class="swiper">
+              <div class="swiper-wrapper mb-8">
+                <div class="swiper-slide grid place-items-center">
+                  <!-- Card Contents -->
+                  <div
+                    class="card-contents flex flex-col lg:flex-row px-0 text-left lg:px-16 py-5 gap-10"
+                  >
+                    <!-- Left Card -->
+                    <div
+                      class="left-card w-full lg:min-w-[390px] lg:max-w-[390px] rounded-xl shadow-primary-shadow px-0 py-4 lg:px-6 lg:py-6"
+                    >
+                      <div
+                        class="card-header w-full rounded-xl overflow-hidden"
+                      >
+                        <img
+                          class="hover:scale-110 duration-300"
+                          src="./images/portfolio-01.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p
+                          class="uppercase text-subtitle-red text-xs pt-7 pb-4 font-medium"
+                        >
+                          Glassfisom
+                        </p>
+                        <h3 class="font-bold text-white">Nevin Dhawan</h3>
+                        <p class="text-sm pt-2 pb-3">CEO Of Officer</p>
+                      </div>
+                    </div>
+                    <!-- Right Card -->
+                    <div
+                      class="right-card w-full lg:min-w-[660px] lg:max-w-[660px] lg:pt-28 relative"
+                    >
+                      <div
+                        class="content px-3 lg:px-8 py-12 shadow-primary-shadow rounded-xl after:content-[''] after:absolute after:top-44 after:-left-10 after:w-10 after:h-[5px] after:bg-[#181a1d] after:hidden after:lg:block"
+                      >
+                        <div
+                          class="flex flex-col lg:flex-row lg:justify-between lg:items-center"
+                        >
+                          <div>
+                            <h3 class="text-white text-[26px]">
+                              Android App Design
+                            </h3>
+                            <p class="font-medium text-base pt-3">
+                              Fiver - Mar 4, 2020 - Aug 30, 2024
+                            </p>
+                          </div>
+                          <div
+                            class="shadow-primary-shadow px-3 py-2 flex my-3 w-20 lg:my-0"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <!-- Line -->
+                        <div class="line w-full h-[1px] bg-black my-7"></div>
+                        <p class="">
+                          No more question for design. Ut tincidunt est ac dolor
+                          aliquam sodales. Phasellus sed mauris hendrerit,
+                          laoreet sem in, lobortis mauris hendrerit ante. Ut
+                          tincidunt est ac dolor aliquam sodales phasellus
+                          smauris
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid place-items-center">
+                  <!-- Card Contents -->
+                  <div
+                    class="card-contents flex flex-col lg:flex-row px-0 text-left lg:px-16 py-5 gap-10"
+                  >
+                    <!-- Left Card -->
+                    <div
+                      class="left-card w-full lg:min-w-[390px] lg:max-w-[390px] rounded-xl shadow-primary-shadow px-0 py-4 lg:px-6 lg:py-6"
+                    >
+                      <div
+                        class="card-header w-full rounded-xl overflow-hidden"
+                      >
+                        <img
+                          class="hover:scale-110 duration-300"
+                          src="./images/portfolio-01.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p
+                          class="uppercase text-subtitle-red text-xs pt-7 pb-4 font-medium"
+                        >
+                          Glassfisom
+                        </p>
+                        <h3 class="font-bold text-white">Nevin Dhawan</h3>
+                        <p class="text-sm pt-2 pb-3">CEO Of Officer</p>
+                      </div>
+                    </div>
+                    <!-- Right Card -->
+                    <div
+                      class="right-card w-full lg:min-w-[660px] lg:max-w-[660px] lg:pt-28 relative"
+                    >
+                      <div
+                        class="content px-3 lg:px-8 py-12 shadow-primary-shadow rounded-xl after:content-[''] after:absolute after:top-44 after:-left-10 after:w-10 after:h-[5px] after:bg-[#181a1d] after:hidden after:lg:block"
+                      >
+                        <div
+                          class="flex flex-col lg:flex-row lg:justify-between lg:items-center"
+                        >
+                          <div>
+                            <h3 class="text-white text-[26px]">
+                              Android App Design
+                            </h3>
+                            <p class="font-medium text-base pt-3">
+                              Fiver - Mar 4, 2020 - Aug 30, 2024
+                            </p>
+                          </div>
+                          <div
+                            class="shadow-primary-shadow px-3 py-2 flex my-3 w-20 lg:my-0"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <!-- Line -->
+                        <div class="line w-full h-[1px] bg-black my-7"></div>
+                        <p class="">
+                          No more question for design. Ut tincidunt est ac dolor
+                          aliquam sodales. Phasellus sed mauris hendrerit,
+                          laoreet sem in, lobortis mauris hendrerit ante. Ut
+                          tincidunt est ac dolor aliquam sodales phasellus
+                          smauris
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid place-items-center">
+                  <!-- Card Contents -->
+                  <div
+                    class="card-contents flex flex-col lg:flex-row px-0 text-left lg:px-16 py-5 gap-10"
+                  >
+                    <!-- Left Card -->
+                    <div
+                      class="left-card w-full lg:min-w-[390px] lg:max-w-[390px] rounded-xl shadow-primary-shadow px-0 py-4 lg:px-6 lg:py-6"
+                    >
+                      <div
+                        class="card-header w-full rounded-xl overflow-hidden"
+                      >
+                        <img
+                          class="hover:scale-110 duration-300"
+                          src="./images/portfolio-01.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p
+                          class="uppercase text-subtitle-red text-xs pt-7 pb-4 font-medium"
+                        >
+                          Glassfisom
+                        </p>
+                        <h3 class="font-bold text-white">Nevin Dhawan</h3>
+                        <p class="text-sm pt-2 pb-3">CEO Of Officer</p>
+                      </div>
+                    </div>
+                    <!-- Right Card -->
+                    <div
+                      class="right-card w-full lg:min-w-[660px] lg:max-w-[660px] lg:pt-28 relative"
+                    >
+                      <div
+                        class="content px-3 lg:px-8 py-12 shadow-primary-shadow rounded-xl after:content-[''] after:absolute after:top-44 after:-left-10 after:w-10 after:h-[5px] after:bg-[#181a1d] after:hidden after:lg:block"
+                      >
+                        <div
+                          class="flex flex-col lg:flex-row lg:justify-between lg:items-center"
+                        >
+                          <div>
+                            <h3 class="text-white text-[26px]">
+                              Android App Design
+                            </h3>
+                            <p class="font-medium text-base pt-3">
+                              Fiver - Mar 4, 2020 - Aug 30, 2024
+                            </p>
+                          </div>
+                          <div
+                            class="shadow-primary-shadow px-3 py-2 flex my-3 w-20 lg:my-0"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <!-- Line -->
+                        <div class="line w-full h-[1px] bg-black my-7"></div>
+                        <p class="">
+                          No more question for design. Ut tincidunt est ac dolor
+                          aliquam sodales. Phasellus sed mauris hendrerit,
+                          laoreet sem in, lobortis mauris hendrerit ante. Ut
+                          tincidunt est ac dolor aliquam sodales phasellus
+                          smauris
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid place-items-center">
+                  <!-- Card Contents -->
+                  <div
+                    class="card-contents flex flex-col lg:flex-row px-0 text-left lg:px-16 py-5 gap-10"
+                  >
+                    <!-- Left Card -->
+                    <div
+                      class="left-card w-full lg:min-w-[390px] lg:max-w-[390px] rounded-xl shadow-primary-shadow px-0 py-4 lg:px-6 lg:py-6"
+                    >
+                      <div
+                        class="card-header w-full rounded-xl overflow-hidden"
+                      >
+                        <img
+                          class="hover:scale-110 duration-300"
+                          src="./images/portfolio-01.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p
+                          class="uppercase text-subtitle-red text-xs pt-7 pb-4 font-medium"
+                        >
+                          Glassfisom
+                        </p>
+                        <h3 class="font-bold text-white">Nevin Dhawan</h3>
+                        <p class="text-sm pt-2 pb-3">CEO Of Officer</p>
+                      </div>
+                    </div>
+                    <!-- Right Card -->
+                    <div
+                      class="right-card w-full lg:min-w-[660px] lg:max-w-[660px] lg:pt-28 relative"
+                    >
+                      <div
+                        class="content px-3 lg:px-8 py-12 shadow-primary-shadow rounded-xl after:content-[''] after:absolute after:top-44 after:-left-10 after:w-10 after:h-[5px] after:bg-[#181a1d] after:hidden after:lg:block"
+                      >
+                        <div
+                          class="flex flex-col lg:flex-row lg:justify-between lg:items-center"
+                        >
+                          <div>
+                            <h3 class="text-white text-[26px]">
+                              Android App Design
+                            </h3>
+                            <p class="font-medium text-base pt-3">
+                              Fiver - Mar 4, 2020 - Aug 30, 2024
+                            </p>
+                          </div>
+                          <div
+                            class="shadow-primary-shadow px-3 py-2 flex my-3 w-20 lg:my-0"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="#fff047"
+                                d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <!-- Line -->
+                        <div class="line w-full h-[1px] bg-black my-7"></div>
+                        <p class="">
+                          No more question for design. Ut tincidunt est ac dolor
+                          aliquam sodales. Phasellus sed mauris hendrerit,
+                          laoreet sem in, lobortis mauris hendrerit ante. Ut
+                          tincidunt est ac dolor aliquam sodales phasellus
+                          smauris
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonial Section End -->
+
+      <!-- Line -->
+      <div class="line w-full h-[1px] bg-black"></div>
+      
+      <!-- Clients Section Start -->
+      <section id="clients-section" class="py-10 lg:pt-32 lg:pb-20">
+        <div class="clients-contents">
+          <div class="text-sm text-subtitle-red uppercase">popular clients</div>
+          <h1 class="my-3 text-4xl lg:text-6xl">Awesome Clients</h1>
+          <!-- clients body -->
+          <div class="py-14 flex flex-col lg:flex-row gap-8 relative">
+            <!-- Left Side -->
+            <div
+              class="left-side shadow-primary-shadow w-full lg:min-w-[450px] lg:max-w-[450px] h-[576px] rounded-xl lg:sticky lg:top-[120px]"
+            >
+              <ul id="client-list">
+                <li
+                  class="w-full h-24 flex justify-center rounded-xl items-center duration-300 shadow-primary-shadow text-subtitle-red hover:text-subtitle-red hover:shadow-primary-shadow"
+                >
+                  JavaScript
+                </li>
+                <li
+                  class="w-full h-24 flex justify-center rounded-xl items-center duration-300 hover:text-subtitle-red hover:shadow-primary-shadow font-semibold"
+                >
+                  Product Design
+                </li>
+                <li
+                  class="w-full h-24 flex justify-center rounded-xl items-center duration-300 hover:text-subtitle-red hover:shadow-primary-shadow font-semibold"
+                >
+                  Wordpress
+                </li>
+                <li
+                  class="w-full h-24 flex justify-center rounded-xl items-center duration-300 hover:text-subtitle-red hover:shadow-primary-shadow font-semibold"
+                >
+                  HTML to React
+                </li>
+                <li
+                  class="w-full h-24 flex justify-center rounded-xl items-center duration-300 hover:text-subtitle-red hover:shadow-primary-shadow font-semibold"
+                >
+                  React To Laravel
+                </li>
+                <li
+                  class="w-full h-24 flex justify-center rounded-xl items-center duration-300 hover:text-subtitle-red hover:shadow-primary-shadow font-semibold"
+                >
+                  Python
+                </li>
+              </ul>
+            </div>
+            <!-- Right Side -->
+            <div
+              class="right-side w-full grid grid-cols-1 lg:grid-cols-3 gap-8 px-5 lg:px-0"
+            >
+              <!-- item-2 -->
+              <div
+                class="item-1 shadow-primary-shadow flex flex-col justify-center items-center h-[240px] gap-5 rounded-xl"
+              >
+                <img src="./images/client1.png" alt="" />
+                <!-- Line -->
+                <div class="line w-full h-[1px] bg-black"></div>
+                <p>Zaid Khan</p>
+              </div>
+              <!-- item-2 -->
+              <div
+                class="item-2 shadow-primary-shadow flex flex-col justify-center items-center h-[240px] gap-5 rounded-xl"
+              >
+                <img src="./images/client1.png" alt="" />
+                <!-- Line -->
+                <div class="line w-full h-[1px] bg-black"></div>
+                <p>Zaid Khan</p>
+              </div>
+              <!-- item-3 -->
+              <div
+                class="item-3 shadow-primary-shadow flex flex-col justify-center items-center h-[240px] gap-5 rounded-xl"
+              >
+                <img src="./images/client1.png" alt="" />
+                <!-- Line -->
+                <div class="line w-full h-[1px] bg-black"></div>
+                <p>Zaid Khan</p>
+              </div>
+              <!-- item-4 -->
+              <div
+                class="item-4 shadow-primary-shadow flex flex-col justify-center items-center h-[240px] gap-5 rounded-xl"
+              >
+                <img src="./images/client1.png" alt="" />
+                <!-- Line -->
+                <div class="line w-full h-[1px] bg-black"></div>
+                <p>Zaid Khan</p>
+              </div>
+              <!-- item-5 -->
+              <div
+                class="item-5 shadow-primary-shadow flex flex-col justify-center items-center h-[240px] gap-5 rounded-xl"
+              >
+                <img src="./images/client1.png" alt="" />
+                <!-- Line -->
+                <div class="line w-full h-[1px] bg-black"></div>
+                <p>Zaid Khan</p>
+              </div>
+              <!-- item-6 -->
+              <div
+                class="item-6 shadow-primary-shadow flex flex-col justify-center items-center h-[240px] gap-5 rounded-xl"
+              >
+                <img src="./images/client1.png" alt="" />
+                <!-- Line -->
+                <div class="line w-full h-[1px] bg-black"></div>
+                <p>Zaid Khan</p>
+              </div>
+              <!-- item-7 -->
+              <div
+                class="item-7 shadow-primary-shadow flex flex-col justify-center items-center h-[240px] gap-5 rounded-xl"
+              >
+                <img src="./images/client1.png" alt="" />
+                <!-- Line -->
+                <div class="line w-full h-[1px] bg-black"></div>
+                <p>Zaid Khan</p>
+              </div>
+              <!-- item-8 -->
+              <div
+                class="item-8 shadow-primary-shadow flex flex-col justify-center items-center h-[240px] gap-5 rounded-xl"
+              >
+                <img src="./images/client1.png" alt="" />
+                <!-- Line -->
+                <div class="line w-full h-[1px] bg-black"></div>
+                <p>Zaid Khan</p>
+              </div>
+              <!-- item-9 -->
+              <div
+                class="item-9 shadow-primary-shadow flex flex-col justify-center items-center h-[240px] gap-5 rounded-xl"
+              >
+                <img src="./images/client1.png" alt="" />
+                <!-- Line -->
+                <div class="line w-full h-[1px] bg-black"></div>
+                <p>Zaid Khan</p>
+              </div>
+              <!-- item-10 -->
+              <div
+                class="item-10 shadow-primary-shadow flex flex-col justify-center items-center h-[240px] gap-5 rounded-xl"
+              >
+                <img src="./images/client1.png" alt="" />
+                <!-- Line -->
+                <div class="line w-full h-[1px] bg-black"></div>
+                <p>Zaid Khan</p>
+              </div>
+              <!-- item-11 -->
+              <div
+                class="item-11 shadow-primary-shadow flex flex-col justify-center items-center h-[240px] gap-5 rounded-xl"
+              >
+                <img src="./images/client1.png" alt="" />
+                <!-- Line -->
+                <div class="line w-full h-[1px] bg-black"></div>
+                <p>Zaid Khan</p>
+              </div>
+              <!-- item-12 -->
+              <div
+                class="item-12 shadow-primary-shadow flex flex-col justify-center items-center h-[240px] gap-5 rounded-xl"
+              >
+                <img src="./images/client1.png" alt="" />
+                <!-- Line -->
+                <div class="line w-full h-[1px] bg-black"></div>
+                <p>Zaid Khan</p>
+              </div>
+              <!-- item-13 -->
+              <div
+                class="item-13 shadow-primary-shadow flex flex-col justify-center items-center h-[240px] gap-5 rounded-xl"
+              >
+                <img src="./images/client1.png" alt="" />
+                <!-- Line -->
+                <div class="line w-full h-[1px] bg-black"></div>
+                <p>Zaid Khan</p>
+              </div>
+              <!-- item-14 -->
+              <div
+                class="item-14 shadow-primary-shadow flex flex-col justify-center items-center h-[240px] gap-5 rounded-xl"
+              >
+                <img src="./images/client1.png" alt="" />
+                <!-- Line -->
+                <div class="line w-full h-[1px] bg-black"></div>
+                <p>Zaid Khan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Clients Section End -->
+      
+      <!-- Line -->
+      <div class="line w-full h-[1px] bg-black"></div>
+
+      <!-- Pricing Section Start -->
+      <section id="pricing-section" class="py-10 lg:pt-32 lg:pb-20">
+        <div
+          class="pricing-contents flex flex-col lg:flex-row lg:justify-between relative"
+        >
+          <!-- head -->
+          <div
+            class="head lg:sticky lg:top-[120px] h-[50px] w-[350px] text-center"
+          >
+            <div class="text-sm text-subtitle-red uppercase">pricing</div>
+            <h1 class="my-3 text-4xl lg:text-6xl">My Pricing</h1>
+          </div>
+          <!-- body -->
+          <div
+            class="body shadow-primary-shadow w-full lg:w-[740px] mt-8 lg:mt-0"
+          >
+            <ul
+              class="resume-bts grid grid-cols-1 lg:grid-cols-3 shadow-primary-shadow rounded-xl text-center"
+            >
+              <!-- btn-1 -->
+              <li
+                id="education"
+                class="px-5 py-7 rounded-xl hover:shadow-primary-shadow hover:text-subtitle-red duration-500 cursor-pointer"
+              >
+                Static
+              </li>
+              <!-- btn-2 -->
+              <li
+                id="professtional-skills"
+                class="px-5 py-7 rounded-xl shadow-primary-shadow text-subtitle-red hover:shadow-primary-shadow hover:text-subtitle-red duration-500 cursor-pointer"
+              >
+                Standard
+              </li>
+              <!-- btn-3 -->
+              <li
+                id="experience"
+                class="px-5 py-7 hover:shadow-primary-shadow hover:text-subtitle-red duration-500 rounded-xl cursor-pointer"
+              >
+                Premium
+              </li>
+            </ul>
+            <!-- Pricing Start -->
+            <div class="lg:px-10 py-12">
+              <!-- Pricing Head -->
+              <div
+                class="pricing-head flex flex-col lg:flex-row gap-5 lg:gap-0 lg:justify-between lg:items-center"
+              >
+                <div class="left">
+                  <h3 class="font-bold text-white">Design Make this Page</h3>
+                  <p class="text-sm">Elementor</p>
+                </div>
+                <div class="right">
+                  <div
+                    class="bg shadow-primary-shadow p-4 w-40 lg:w-auto rounded-xl"
+                  >
+                    <h2 class="text-subtitle-red">$50.00</h2>
+                  </div>
+                </div>
+              </div>
+              <!-- Pricing Body -->
+              <div class="pricing-body">
+                <p class="py-10 w-[90%]">
+                  Making this the first true generator on the Internet. It uses
+                  a dictionary &amp; plugin Development.
+                </p>
+                <!-- Pricing List -->
+                <div
+                  class="pricing-list flex flex-col lg:flex-row lg:justify-between gap-2"
+                >
+                  <!-- left area -->
+                  <div class="left-area flex flex-col gap-2">
+                    <div class="flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>1 Page with Elementor</p>
+                    </div>
+                    <div class="flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Design Customization</p>
+                    </div>
+                    <div class="flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Responsive Design</p>
+                    </div>
+                    <div class="flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Content Upload</p>
+                    </div>
+                    <div class="flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Design Customization</p>
+                    </div>
+                    <div class="flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>2 Plugins/Extensions</p>
+                    </div>
+                  </div>
+                  <!-- right area -->
+                  <div class="right-area flex flex-col gap-2">
+                    <div class="flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>multipage Elementor</p>
+                    </div>
+                    <div class="flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Design Figma</p>
+                    </div>
+                    <div class="flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>MAintaine Design</p>
+                    </div>
+                    <div class="flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Content Upload</p>
+                    </div>
+                    <div class="flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>Design With XD</p>
+                    </div>
+                    <div class="flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-check"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <p>8 Plugins/Extensions</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pricing Footer -->
+                <div class="pricing-footer text-center mt-10 lg:mt-20">
+                  <a
+                    class="block shadow-primary-shadow w-full py-6 rounded-xl uppercase text-subtitle-red"
+                    href="#"
+                    >Order Now</a
+                  >
+                  <div
+                    class="time-line text-xs pt-7 flex gap-4 flex-col lg:flex-row justify-center"
+                  >
+                    <div class="flex items-center gap-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-clock"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      <span>2 Days Delivery</span>
+                    </div>
+                    <div class="single-cmt flex items-center gap-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-activity"
+                      >
+                        <polyline
+                          points="22 12 18 12 15 21 9 3 6 12 2 12"
+                        ></polyline>
+                      </svg>
+                      <span>Unlimited Revission</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pricing Section Start -->
+
+      <!-- Line -->
+      <div class="line w-full h-[1px] bg-black"></div>
+
+      <!-- Blog Section Start -->
+      <section id="blog-section" class="py-10 lg:pt-32 lg:pb-20">
+        <div class="blog-content text-center">
+          <div class="text-sm text-subtitle-red uppercase">
+            Visit my Blog and keep your feedback
+          </div>
+          <h1 class="my-3">My Blog</h1>
+          <!-- cards container -->
+          <div
+            class="cards-container grid md:grid-cols-2 lg:grid-cols-3 my-16 gap-10"
+          >
+            <!-- card start 1-->
+            <div
+              class="group card px-7 py-9 rounded-3xl shadow-primary-shadow"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="100"
+            >
+              <div class="card-body duration-500">
+                <div class="img overflow-hidden rounded-2xl">
+                  <img
+                    class="group-hover:scale-110 duration-500 rounded-2xl"
+                    src="./images/portfolio-01.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="head-section flex justify-between items-center py-5"
+                >
+                  <p class="text-subtitle-red text-xs uppercase">Development</p>
+                  <div class="likes flex gap-1">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          fill="white"
+                          d="M178 40c-20.65 0-38.73 8.88-50 23.89C116.73 48.88 98.65 40 78 40a62.07 62.07 0 0 0-62 62c0 70 103.79 126.66 108.21 129a8 8 0 0 0 7.58 0C136.21 228.66 240 172 240 102a62.07 62.07 0 0 0-62-62m-50 174.8c-18.26-10.64-96-59.11-96-112.8a46.06 46.06 0 0 1 46-46c19.45 0 35.78 10.36 42.6 27a8 8 0 0 0 14.8 0c6.82-16.67 23.15-27 42.6-27a46.06 46.06 0 0 1 46 46c0 53.61-77.76 102.15-96 112.8"
+                        />
+                      </svg>
+                    </span>
+                    <span class="text-xs">600</span>
+                  </div>
+                </div>
+                <h3
+                  class="text-left group/arrow hover:text-subtitle-red duration-500"
+                >
+                  The services provide for design
+                  <span
+                    class="inline-block opacity-0 group-hover/arrow:opacity-100 duration-500"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#ff0000"
+                        d="m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6t.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17t-.712-.288T16 16z"
+                      /></svg
+                  ></span>
+                </h3>
+              </div>
+            </div>
+            <!-- card start 2-->
+            <div
+              class="group card px-7 py-9 rounded-3xl shadow-primary-shadow"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="300"
+            >
+              <div class="card-body duration-500">
+                <div class="img overflow-hidden rounded-2xl">
+                  <img
+                    class="group-hover:scale-110 duration-500 rounded-2xl"
+                    src="./images/portfolio-02.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="head-section flex justify-between items-center py-5"
+                >
+                  <p class="text-subtitle-red text-xs uppercase">Development</p>
+                  <div class="likes flex gap-1">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          fill="white"
+                          d="M178 40c-20.65 0-38.73 8.88-50 23.89C116.73 48.88 98.65 40 78 40a62.07 62.07 0 0 0-62 62c0 70 103.79 126.66 108.21 129a8 8 0 0 0 7.58 0C136.21 228.66 240 172 240 102a62.07 62.07 0 0 0-62-62m-50 174.8c-18.26-10.64-96-59.11-96-112.8a46.06 46.06 0 0 1 46-46c19.45 0 35.78 10.36 42.6 27a8 8 0 0 0 14.8 0c6.82-16.67 23.15-27 42.6-27a46.06 46.06 0 0 1 46 46c0 53.61-77.76 102.15-96 112.8"
+                        />
+                      </svg>
+                    </span>
+                    <span class="text-xs">600</span>
+                  </div>
+                </div>
+                <h3
+                  class="text-left group/arrow hover:text-subtitle-red duration-500"
+                >
+                  The services provide for design
+                  <span
+                    class="inline-block opacity-0 group-hover/arrow:opacity-100 duration-500"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#ff0000"
+                        d="m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6t.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17t-.712-.288T16 16z"
+                      /></svg
+                  ></span>
+                </h3>
+              </div>
+            </div>
+            <!-- card start 3-->
+            <div
+              class="group card px-7 py-9 rounded-3xl shadow-primary-shadow"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="500"
+            >
+              <div class="card-body duration-500">
+                <div class="img overflow-hidden rounded-2xl">
+                  <img
+                    class="group-hover:scale-110 duration-500 rounded-2xl"
+                    src="./images/portfolio-03.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="head-section flex justify-between items-center py-5"
+                >
+                  <p class="text-subtitle-red text-xs uppercase">Development</p>
+                  <div class="likes flex gap-1">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          fill="white"
+                          d="M178 40c-20.65 0-38.73 8.88-50 23.89C116.73 48.88 98.65 40 78 40a62.07 62.07 0 0 0-62 62c0 70 103.79 126.66 108.21 129a8 8 0 0 0 7.58 0C136.21 228.66 240 172 240 102a62.07 62.07 0 0 0-62-62m-50 174.8c-18.26-10.64-96-59.11-96-112.8a46.06 46.06 0 0 1 46-46c19.45 0 35.78 10.36 42.6 27a8 8 0 0 0 14.8 0c6.82-16.67 23.15-27 42.6-27a46.06 46.06 0 0 1 46 46c0 53.61-77.76 102.15-96 112.8"
+                        />
+                      </svg>
+                    </span>
+                    <span class="text-xs">600</span>
+                  </div>
+                </div>
+                <h3
+                  class="text-left group/arrow hover:text-subtitle-red duration-500"
+                >
+                  The services provide for design
+                  <span
+                    class="inline-block opacity-0 group-hover/arrow:opacity-100 duration-500"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#ff0000"
+                        d="m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6t.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17t-.712-.288T16 16z"
+                      /></svg
+                  ></span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Line -->
+      <div class="line w-full h-[1px] bg-black"></div>
+
+      <!-- Form Section Start -->
+      <section id="form-section" class="py-10 lg:pt-32 lg:pb-20">
+        <div class="form-content text-center">
+          <div class="text-sm text-subtitle-red uppercase">contact</div>
+          <h1 class="my-3">Let's Connect</h1>
+          <!-- Body Section -->
+          <div class="body-section py-10">
+            <!-- left -->
+            <div
+              class="left w-full lg:w-[540px] p-8 rounded-xl shadow-primary-shadow text-left"
+            >
+              <div class="img overflow-hidden w-full rounded-xl">
+                <img
+                  class="w-full lg:h-[291px] hover:scale-110 duration-300"
+                  src="./images/portfolio-02.jpg"
+                  alt=""
+                />
+              </div>
+              <h3 class="font-bold text-3xl text-white py-5">
+                Nevine Acotanza
+              </h3>
+              <p>Chief Operating Officer</p>
+              <p class="py-5">
+                I am available for freelance work. Connect with me via and call
+                in to my account.
+              </p>
+              <p>
+                Phone:
+                <span
+                  class="text-white relative cursor-pointer hover:text-subtitle-red duration-300 after:content-[''] after:w-0 after:h-[2px] after:bg-[#f9004d] after:absolute after:-bottom-1 after:right-0 after:duration-300 after:left-0 hover:after:w-full"
+                  >0309094754</span
+                >
+              </p>
+              <p>
+                Email:
+                <span
+                  class="text-white relative cursor-pointer hover:text-subtitle-red duration-300 after:content-[''] after:w-0 after:h-[2px] after:bg-[#f9004d] after:absolute after:-bottom-1 after:right-0 after:duration-300 after:left-0 hover:after:w-full"
+                  >zaidkhan545.kz@gmail.com</span
+                >
+              </p>
+              <div class="right pt-5">
+                <span class="text-sm">FIND WITH ME</span>
+                <div class="social-icons flex gap-4 mt-4">
+                  <!-- fb svg -->
+                  <div
+                    class="fb p-4 shadow-primary-shadow rounded-lg hover:-translate-y-1 duration-300"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.2em"
+                      height="1.2em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="white"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.1"
+                        d="M17 2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                      />
+                    </svg>
+                  </div>
+                  <!-- instagram svg -->
+                  <div
+                    class="insta p-4 shadow-primary-shadow rounded-lg hover:-translate-y-1 duration-300"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.2em"
+                      height="1.2em"
+                      viewBox="0 0 24 24"
+                    >
+                      <g fill="none" stroke="white" stroke-width="1.1">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8"
+                        />
+                        <path
+                          d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m17.5 6.51l.01-.011"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <!-- linkind svg -->
+                  <div
+                    class="linkind p-4 shadow-primary-shadow rounded-lg hover:-translate-y-1 duration-300"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.2em"
+                      height="1.2em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="white"
+                        fill-rule="evenodd"
+                        d="M5 1.25a2.75 2.75 0 1 0 0 5.5a2.75 2.75 0 0 0 0-5.5M3.75 4a1.25 1.25 0 1 1 2.5 0a1.25 1.25 0 0 1-2.5 0m-1.5 4A.75.75 0 0 1 3 7.25h4a.75.75 0 0 1 .75.75v13a.75.75 0 0 1-.75.75H3a.75.75 0 0 1-.75-.75zm1.5.75v11.5h2.5V8.75zM9.25 8a.75.75 0 0 1 .75-.75h4a.75.75 0 0 1 .75.75v.434l.435-.187a7.8 7.8 0 0 1 2.358-.595C20.318 7.4 22.75 9.58 22.75 12.38V21a.75.75 0 0 1-.75.75h-4a.75.75 0 0 1-.75-.75v-7a1.25 1.25 0 0 0-2.5 0v7a.75.75 0 0 1-.75.75h-4a.75.75 0 0 1-.75-.75zm1.5.75v11.5h2.5V14a2.75 2.75 0 1 1 5.5 0v6.25h2.5v-7.87c0-1.904-1.661-3.408-3.57-3.234a6.3 6.3 0 0 0-1.904.48l-1.48.635a.75.75 0 0 1-1.046-.69V8.75z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- right -->
+            <div class="right w-[780px]"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Form Section End -->
+
+      <!-- Line -->
+      <div class="line w-full h-[1px] bg-black"></div>
+    </main>
+    <!-- Main Section End -->
+
+    <!-- Footer Section Start-->
+    <footer>
+      <section class="flex justify-center items-center w-full p-[100px]">
+        <div class="grid place-items-center">
+          <div class="logo">
+            <div class="logo-img">
+              <img
+                class="w-16 rounded-full border-4 border-[rgb(74,80,87)]"
+                src="./images/profile-pic.jpg"
+                alt=""
+              />
+            </div>
+            <div class="logo-name font-bold">INBIO</div>
+          </div>
+          <p class="py-5">
+            © 2022. All rights reserved by
+            <a
+              class="text-white relative hover:text-subtitle-red duration-300 after:content-[''] after:w-0 after:h-[2px] after:bg-[#f9004d] after:absolute after:-bottom-1 after:right-0 after:duration-300 after:left-0 hover:after:w-full"
+              href="#"
+              >Zaid Khan</a
+            >.
+          </p>
+        </div>
+      </section>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- typed JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- JS -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
