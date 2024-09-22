@@ -14,3 +14,9 @@
         @apply text-2xl font-medium;
     }
 }
+
+@layer components{
+    .textbox{
+        @apply w-full bg-[#191b1e] rounded-md h-14 px-4 text-sm shadow-inner-shadow outline-none focus:outline-subtitle-red duration-300 focus:border-none my-5;
+    }
+}
