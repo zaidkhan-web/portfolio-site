@@ -12,7 +12,6 @@ toggleBtn.addEventListener("click", () => {
 
 crossBtn.addEventListener("click", () => {
   navBar.classList.remove("left-1");
-  navBar.style.height = "100vh";
 });
 
 let navItems = document.querySelectorAll('#nav-items li')

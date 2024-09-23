@@ -689,6 +689,14 @@ h3{
   z-index: -10;
 }
 
+.z-50{
+  z-index: 50;
+}
+
+.z-\[999\]{
+  z-index: 999;
+}
+
 .my-14{
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
@@ -809,6 +817,10 @@ h3{
 
 .h-full{
   height: 100%;
+}
+
+.h-screen{
+  height: 100vh;
 }
 
 .min-h-60{
@@ -1535,6 +1547,10 @@ h3{
 
   .lg\:h-\[562px\]{
     height: 562px;
+  }
+
+  .lg\:h-full{
+    height: 100%;
   }
 
   .lg\:w-1\/2{
