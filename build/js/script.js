@@ -32,12 +32,14 @@ window.addEventListener("scroll", () => {
     header.style.backgroundColor = "rgba(33,36,40,0.6)";
     header.style.boxShadow = "0px 3px 6px 1px rgba(0,0,0,0.4)";
     header.style.backdropFilter = "blur(8px)";
+    header.classList.add('ios:backdrop-blur');
     header.style.position = "fixed";
     header.style.top = "0";
     header.style.zIndex = "10";
   } else {
     header.style.backgroundColor = "transparent";
     header.style.position = "static";
+    header.classList.remove('ios:backdrop-blur');
     header.style.boxShadow = "none";
     header.style.backdropFilter = "blur(0px)";
   }
