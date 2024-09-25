@@ -77,6 +77,20 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+// my Projects
+let cardOne = document.getElementById('card-1')
+let popUp = document.getElementById('pop-up')
+let popUpCrossBtn = document.getElementById('pop-up-cross-btn')
+
+cardOne.addEventListener('click', ()=>{
+  popUp.classList.remove('hidden')
+  popUp.classList.add('grid')
+  popUp.classList.add('place-items-center')
+})
+popUpCrossBtn.addEventListener('click', ()=>{
+  popUp.classList.add('hidden')
+})
+
 // Experience
 let exper = document.getElementById("exper");
 let myDate = new Date();
