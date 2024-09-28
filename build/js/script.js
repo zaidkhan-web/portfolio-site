@@ -360,7 +360,7 @@ basic.addEventListener('click', ()=>{
                   <div
                     class="bg shadow-primary-shadow p-4 w-40 lg:w-auto rounded-xl"
                   >
-                    <h2 class="text-subtitle-red">$1053</h2>
+                    <h2 class="text-subtitle-red">$120</h2>
                   </div>
                 </div>
               </div>
@@ -407,7 +407,7 @@ basic.addEventListener('click', ()=>{
                       points="22 12 18 12 15 21 9 3 6 12 2 12"
                     ></polyline>
                   </svg>
-                  <span>1 Revision</span>
+                  <span>Unlimited Revisions</span>
                 </div>
               </div>
                 <!-- Pricing List -->
@@ -416,7 +416,7 @@ basic.addEventListener('click', ()=>{
                 >
                   <!-- left area -->
                   <div class="left-area flex flex-col gap-2">
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -433,7 +433,7 @@ basic.addEventListener('click', ()=>{
                       </svg>
                       <p>Function Android app</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -450,7 +450,7 @@ basic.addEventListener('click', ()=>{
                       </svg>
                       <p>Functional IOS App</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -467,7 +467,7 @@ basic.addEventListener('click', ()=>{
                       </svg>
                       <p>App Submission</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -484,7 +484,7 @@ basic.addEventListener('click', ()=>{
                       </svg>
                       <p>App icon</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -501,7 +501,7 @@ basic.addEventListener('click', ()=>{
                       </svg>
                       <p>Splash screen</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -518,7 +518,7 @@ basic.addEventListener('click', ()=>{
                       </svg>
                       <p>Ad network integration</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -565,7 +565,7 @@ standard.addEventListener('click', () => {
                   <div
                     class="bg shadow-primary-shadow p-4 w-40 lg:w-auto rounded-xl"
                   >
-                    <h2 class="text-subtitle-red">$4212</h2>
+                    <h2 class="text-subtitle-red">$440</h2>
                   </div>
                 </div>
               </div>
@@ -612,7 +612,7 @@ standard.addEventListener('click', () => {
                       points="22 12 18 12 15 21 9 3 6 12 2 12"
                     ></polyline>
                   </svg>
-                  <span>2 Revisions</span>
+                  <span>Unlimited Revisions</span>
                 </div>
               </div>
                 <!-- Pricing List -->
@@ -621,7 +621,7 @@ standard.addEventListener('click', () => {
                 >
                   <!-- left area -->
                   <div class="left-area flex flex-col gap-2">
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -638,7 +638,7 @@ standard.addEventListener('click', () => {
                       </svg>
                       <p>Function Android app</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -655,7 +655,7 @@ standard.addEventListener('click', () => {
                       </svg>
                       <p>Functional IOS App</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -672,7 +672,7 @@ standard.addEventListener('click', () => {
                       </svg>
                       <p>App Submission</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -689,7 +689,7 @@ standard.addEventListener('click', () => {
                       </svg>
                       <p>App icon</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -706,7 +706,7 @@ standard.addEventListener('click', () => {
                       </svg>
                       <p>Splash screen</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -723,7 +723,7 @@ standard.addEventListener('click', () => {
                       </svg>
                       <p>Ad network integration</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -770,7 +770,7 @@ premium.addEventListener('click', () => {
                   <div
                     class="bg shadow-primary-shadow p-4 w-40 lg:w-auto rounded-xl"
                   >
-                    <h2 class="text-subtitle-red">$7372</h2>
+                    <h2 class="text-subtitle-red">$1200</h2>
                   </div>
                 </div>
               </div>
@@ -817,7 +817,7 @@ premium.addEventListener('click', () => {
                       points="22 12 18 12 15 21 9 3 6 12 2 12"
                     ></polyline>
                   </svg>
-                  <span>3 Revisions</span>
+                  <span>Unlimited Revisions</span>
                 </div>
               </div>
                 <!-- Pricing List -->
@@ -826,7 +826,7 @@ premium.addEventListener('click', () => {
                 >
                   <!-- left area -->
                   <div class="left-area flex flex-col gap-2">
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -843,7 +843,7 @@ premium.addEventListener('click', () => {
                       </svg>
                       <p>Function Android app</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -860,7 +860,7 @@ premium.addEventListener('click', () => {
                       </svg>
                       <p>Functional IOS App</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -877,7 +877,7 @@ premium.addEventListener('click', () => {
                       </svg>
                       <p>App Submission</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -894,7 +894,7 @@ premium.addEventListener('click', () => {
                       </svg>
                       <p>App icon</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -911,7 +911,7 @@ premium.addEventListener('click', () => {
                       </svg>
                       <p>Splash screen</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -928,7 +928,7 @@ premium.addEventListener('click', () => {
                       </svg>
                       <p>Ad network integration</p>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -972,16 +972,24 @@ let email = document.getElementById('email')
 let subject = document.getElementById('subject')
 let msg = document.getElementById('msg')
 
+function emptyInputs(){
+  name.value = ""
+  number.value = ""
+  email.value = ""
+  subject.value = ""
+  msg.value = ""
+}
+
 function sendEmail(){
 
-  const bodyMessage = `Name: ${name.value} <br> Phone Number: ${number.value} <br> Email: ${email.value} <br> Message: ${msg.value}`
+  const bodyMessage = `Name: ${name.value} <br> Phone Number: ${number.value} <br> Subject: ${subject.value} <br> Message: ${msg.value}`
 
   Email.send({
     Host : "smtp.elasticemail.com",
-    Username : "zaidkhan545.kz@gmail.com",
-    Password : "BBC489E601A35B5CE3B3E61F01E82247E2E5",
-    To : 'zaidkhan545.kz@gmail.com',
-    From : 'zaidkhan545.kz@gmail.com',
+    Username : "atiqahmad919@gmail.com",
+    Password : "61A0BEE5A3725EE8CAA1D4F4AD4EDD78CA32",
+    To : 'atiqahmad919@gmail.com',
+    From : 'atiqahmad919@gmail.com',
     Subject : subject.value,
     Body : bodyMessage
 }).then(
@@ -991,6 +999,7 @@ function sendEmail(){
       text: "Message Sent Successfully!",
       icon: "success"
     });
+    emptyInputs()
   }
   else{
     Swal.fire({
@@ -1004,6 +1013,5 @@ function sendEmail(){
 }
 form.addEventListener('submit', (e)=>{
   e.preventDefault()
-
   sendEmail()
 })
