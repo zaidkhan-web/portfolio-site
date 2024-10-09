@@ -85,16 +85,39 @@ var swiper = new Swiper(".swiper", {
 
 // my Projects
 let cardOne = document.getElementById("card-1");
+let cardTwo = document.getElementById("card-2");
+let cardThree = document.getElementById("card-3");
+let cardFour = document.getElementById("card-4");
 let popUp = document.getElementById("pop-up");
+let popUpTwo = document.getElementById("pop-up-2");
+let popUpThree = document.getElementById("pop-up-3");
+let popUpFour = document.getElementById("pop-up-4");
 let popUpCrossBtn = document.getElementById("pop-up-cross-btn");
+// Select all cards and pop-ups
+const cards = document.querySelectorAll("#cardds li");
+const popUps = document.querySelectorAll("#pop-ups li");
+const popUpCrossBtns = document.querySelectorAll("#pop-up-cross-btn");
 
-cardOne.addEventListener("click", () => {
+// Function to show pop-up
+function showPopUp(popUp) {
   popUp.classList.remove("hidden");
-  popUp.classList.add("grid");
-  popUp.classList.add("place-items-center");
-});
-popUpCrossBtn.addEventListener("click", () => {
+  popUp.classList.add("grid", "place-items-center");
+}
+
+// Function to hide pop-up
+function hidePopUp(popUp) {
   popUp.classList.add("hidden");
+  popUp.classList.remove("grid", "place-items-center");
+}
+
+// Add click event listeners to cards
+cards.forEach((card, index) => {
+  card.addEventListener("click", () => showPopUp(popUps[index]));
+});
+
+// Add click event listeners to close buttons
+popUpCrossBtns.forEach((btn, index) => {
+  btn.addEventListener("click", () => hidePopUp(popUps[index]));
 });
 
 // Experience

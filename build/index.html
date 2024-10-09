@@ -475,11 +475,12 @@
           </div>
           <h1 class="my-3 text-5xl">My Projects</h1>
           <!-- cards container -->
-          <div
+          <ul
+            id="cardds"
             class="cards-container grid md:grid-cols-2 lg:grid-cols-3 my-16 gap-10"
           >
             <!-- card start 1-->
-            <div
+            <li
               id="card-1"
               class="group card px-7 py-9 rounded-3xl shadow-primary-shadow"
               data-aos="fade-up"
@@ -514,9 +515,10 @@
                   ></span>
                 </h3>
               </div>
-            </div>
+            </li>
             <!-- card start 2-->
-            <div
+            <li
+              id="card-2"
               class="group card px-7 py-9 rounded-3xl shadow-primary-shadow"
               data-aos="fade-up"
               data-aos-duration="500"
@@ -550,9 +552,10 @@
                   ></span>
                 </h3>
               </div>
-            </div>
+            </li>
             <!-- card start 3-->
-            <div
+            <li
+              id="card-3"
               class="group card px-7 py-9 rounded-3xl shadow-primary-shadow"
               data-aos="fade-up"
               data-aos-duration="500"
@@ -586,9 +589,10 @@
                   ></span>
                 </h3>
               </div>
-            </div>
+            </li>
             <!-- card start 4-->
-            <div
+            <li
+              id="card-4"
               class="group card px-7 py-9 rounded-3xl shadow-primary-shadow"
               data-aos="fade-up"
               data-aos-duration="500"
@@ -622,8 +626,8 @@
                   ></span>
                 </h3>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- Projects Section End -->
@@ -1657,54 +1661,224 @@
     <!-- Footer Section End -->
 
     <!-- pop-up -->
-    <div
-      id="pop-up"
-      class="overflow-auto w-full h-screen px-5 py-9 bg-black-bg fixed top-0 left-0 z-50 hidden"
-    >
-      <div
-        class="w-full border-[1px] border-subtitle-red md:w-[80%] md:mx-auto shadow-primary-shadow relative bg-black-bg px-5 md:px-10 pt-16 pb-5 md:py-10 rounded-2xl md:flex md:justify-center md:items-center md:gap-10"
+    <!-- Pop-up 1 -->
+    <ul id="pop-ups">
+      <li
+        id="pop-up"
+        class="overflow-auto w-full h-screen px-5 py-9 bg-black-bg fixed top-0 left-0 z-50 hidden"
       >
-        <!-- cross icon -->
-        <button
-          id="pop-up-cross-btn"
-          class="bg-black-bg shadow-primary-shadow p-3 rounded-full absolute top-2 right-2"
+        <div
+          class="w-full border-[1px] border-subtitle-red md:w-[80%] md:mx-auto shadow-primary-shadow relative bg-black-bg px-5 md:px-10 pt-16 pb-5 md:py-10 rounded-2xl md:flex md:justify-center md:items-center md:gap-10"
         >
-          ❌
-        </button>
-        <!-- img -->
-        <div class="overflow-hidden rounded-2xl md:w-[50%]">
-          <img class="rounded-2xl" src="./images/My-Resume-App.png" alt="" />
-        </div>
-        <!-- end img -->
+          <!-- cross icon -->
+          <button
+            id="pop-up-cross-btn"
+            class="bg-black-bg shadow-primary-shadow p-3 rounded-full absolute top-2 right-2"
+          >
+            ❌
+          </button>
+          <!-- img -->
+          <div class="overflow-hidden rounded-2xl md:w-[50%]">
+            <img class="rounded-2xl" src="./images/My-Resume-App.png" alt="" />
+          </div>
+          <!-- end img -->
 
-        <!-- text start -->
-        <div class="py-5 md:px-10 md:w-[50%]">
-          <p>Featured - Design</p>
-          <h2 class="text-white py-4">App Design Development.</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
-            quisquam aperiam aspernatur dolore maiores, nulla neque minus porro
-            tempora illum?
-          </p>
-          <p class="py-4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
-            dolorum totam veritatis reiciendis harum minima illo iste, quam
-            nostrum voluptates? Vero ab illo ullam unde?
-          </p>
-          <button
-            class="block md:inline-block md:mx-3 text-subtitle-red shadow-primary-shadow px-7 py-3 rounded-lg my-3"
-          >
-            Like This
-          </button>
-          <button
-            class="text-subtitle-red shadow-primary-shadow px-7 py-3 rounded-lg my-3"
-          >
-            View Project
-          </button>
+          <!-- text start -->
+          <div class="py-5 md:px-10 md:w-[50%]">
+            <p>Featured - Design</p>
+            <h2 class="text-white py-4">Atiq Ahmad CV on Playstore</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusamus quisquam aperiam aspernatur dolore maiores, nulla neque
+              minus porro tempora illum?
+            </p>
+            <p class="py-4">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae dolorum totam veritatis reiciendis harum minima illo
+              iste, quam nostrum voluptates? Vero ab illo ullam unde?
+            </p>
+            <!-- GitHub svg -->
+            <a href="https://github.com/atiqahmad919/atiq_cv" target="_blank"
+              ><div
+                class="github p-4 w-14 shadow-primary-shadow rounded-lg hover:-translate-y-1 duration-300"
+              >
+                <img
+                  width="25px"
+                  src="./images/github-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+          <!-- text end -->
         </div>
-        <!-- text end -->
-      </div>
-    </div>
+      </li>
+      <!-- Pop-up 1 End -->
+      <!-- Pop-up 2 -->
+      <li
+        id="pop-up-2"
+        class="overflow-auto w-full h-screen px-5 py-9 bg-black-bg fixed top-0 left-0 z-50 hidden"
+      >
+        <div
+          class="w-full border-[1px] border-subtitle-red md:w-[80%] md:mx-auto shadow-primary-shadow relative bg-black-bg px-5 md:px-10 pt-16 pb-5 md:py-10 rounded-2xl md:flex md:justify-center md:items-center md:gap-10"
+        >
+          <!-- cross icon -->
+          <button
+            id="pop-up-cross-btn"
+            class="bg-black-bg shadow-primary-shadow p-3 rounded-full absolute top-2 right-2"
+          >
+            ❌
+          </button>
+          <!-- img -->
+          <div class="overflow-hidden rounded-2xl md:w-[50%]">
+            <img class="rounded-2xl" src="./images/FDS.png" alt="" />
+          </div>
+          <!-- end img -->
+
+          <!-- text start -->
+          <div class="py-5 md:px-10 md:w-[50%]">
+            <p>Featured - Design</p>
+            <h2 class="text-white py-4">Fast Delivery Service</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusamus quisquam aperiam aspernatur dolore maiores, nulla neque
+              minus porro tempora illum?
+            </p>
+            <p class="py-4">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae dolorum totam veritatis reiciendis harum minima illo
+              iste, quam nostrum voluptates? Vero ab illo ullam unde?
+            </p>
+            <!-- GitHub svg -->
+            <a href="https://github.com/atiqahmad919/FDS" target="_blank"
+              ><div
+                class="github p-4 w-14 shadow-primary-shadow rounded-lg hover:-translate-y-1 duration-300"
+              >
+                <img
+                  width="25px"
+                  src="./images/github-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+          <!-- text end -->
+        </div>
+      </li>
+      <!-- pop-up 2 end -->
+      <!-- Pop-up 3 -->
+      <li
+        id="pop-up-3"
+        class="overflow-auto w-full h-screen px-5 py-9 bg-black-bg fixed top-0 left-0 z-50 hidden"
+      >
+        <div
+          class="w-full border-[1px] border-subtitle-red md:w-[80%] md:mx-auto shadow-primary-shadow relative bg-black-bg px-5 md:px-10 pt-16 pb-5 md:py-10 rounded-2xl md:flex md:justify-center md:items-center md:gap-10"
+        >
+          <!-- cross icon -->
+          <button
+            id="pop-up-cross-btn"
+            class="bg-black-bg shadow-primary-shadow p-3 rounded-full absolute top-2 right-2"
+          >
+            ❌
+          </button>
+          <!-- img -->
+          <div class="overflow-hidden rounded-2xl md:w-[50%]">
+            <img class="rounded-2xl" src="./images/Pashto-Quotes.png" alt="" />
+          </div>
+          <!-- end img -->
+
+          <!-- text start -->
+          <div class="py-5 md:px-10 md:w-[50%]">
+            <p>Featured - Design</p>
+            <h2 class="text-white py-4">Pashto Quotes App</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusamus quisquam aperiam aspernatur dolore maiores, nulla neque
+              minus porro tempora illum?
+            </p>
+            <p class="py-4">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae dolorum totam veritatis reiciendis harum minima illo
+              iste, quam nostrum voluptates? Vero ab illo ullam unde?
+            </p>
+            <!-- GitHub svg -->
+            <a
+              href="https://github.com/atiqahmad919/Pashto-Quotes"
+              target="_blank"
+              ><div
+                class="github p-4 w-14 shadow-primary-shadow rounded-lg hover:-translate-y-1 duration-300"
+              >
+                <img
+                  width="25px"
+                  src="./images/github-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+          <!-- text end -->
+        </div>
+      </li>
+      <!-- pop-up 3 end -->
+      <!-- Pop-up 4 -->
+      <li
+        id="pop-up-4"
+        class="overflow-auto w-full h-screen px-5 py-9 bg-black-bg fixed top-0 left-0 z-50 hidden"
+      >
+        <div
+          class="w-full border-[1px] border-subtitle-red md:w-[80%] md:mx-auto shadow-primary-shadow relative bg-black-bg px-5 md:px-10 pt-16 pb-5 md:py-10 rounded-2xl md:flex md:justify-center md:items-center md:gap-10"
+        >
+          <!-- cross icon -->
+          <button
+            id="pop-up-cross-btn"
+            class="bg-black-bg shadow-primary-shadow p-3 rounded-full absolute top-2 right-2"
+          >
+            ❌
+          </button>
+          <!-- img -->
+          <div class="overflow-hidden rounded-2xl md:w-[50%]">
+            <img
+              class="rounded-2xl"
+              src="./images/Fast-Food-Point.png"
+              alt=""
+            />
+          </div>
+          <!-- end img -->
+
+          <!-- text start -->
+          <div class="py-5 md:px-10 md:w-[50%]">
+            <p>Featured - Design</p>
+            <h2 class="text-white py-4">Fast Food Point</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusamus quisquam aperiam aspernatur dolore maiores, nulla neque
+              minus porro tempora illum?
+            </p>
+            <p class="py-4">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae dolorum totam veritatis reiciendis harum minima illo
+              iste, quam nostrum voluptates? Vero ab illo ullam unde?
+            </p>
+            <!-- GitHub svg -->
+            <a
+              href="https://github.com/atiqahmad919/Fast-Food-Point"
+              target="_blank"
+              ><div
+                class="github p-4 w-14 shadow-primary-shadow rounded-lg hover:-translate-y-1 duration-300"
+              >
+                <img
+                  width="25px"
+                  src="./images/github-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+          <!-- text end -->
+        </div>
+      </li>
+    </ul>
+    <!-- pop-up 4 end -->
     <!-- pop-up end -->
 
     <!-- Email Sender Script -->
