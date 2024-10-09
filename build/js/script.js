@@ -14,12 +14,12 @@ crossBtn.addEventListener("click", () => {
   navBar.classList.remove("left-1");
 });
 
-let navItems = document.querySelectorAll('#nav-items li')
-navItems.forEach((e)=>{
-  e.addEventListener('click', ()=>{
-    navBar.classList.remove('left-1')
-  })
-})
+let navItems = document.querySelectorAll("#nav-items li");
+navItems.forEach((e) => {
+  e.addEventListener("click", () => {
+    navBar.classList.remove("left-1");
+  });
+});
 
 // Header JS
 let header = document.querySelector("#header");
@@ -32,14 +32,14 @@ window.addEventListener("scroll", () => {
     header.style.backgroundColor = "rgba(33,36,40,0.6)";
     header.style.boxShadow = "0px 3px 6px 1px rgba(0,0,0,0.4)";
     header.style.backdropFilter = "blur(8px)";
-    header.classList.add('ios:backdrop-blur');
+    header.classList.add("ios:backdrop-blur");
     header.style.position = "fixed";
     header.style.top = "0";
     header.style.zIndex = "10";
   } else {
     header.style.backgroundColor = "transparent";
     header.style.position = "static";
-    header.classList.remove('ios:backdrop-blur');
+    header.classList.remove("ios:backdrop-blur");
     header.style.boxShadow = "none";
     header.style.backdropFilter = "blur(0px)";
   }
@@ -60,17 +60,23 @@ var typed = new Typed("#text-animated", {
 });
 
 // Swiper JS
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
+var swiper = new Swiper(".swiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
   loop: true,
-
-  // If we need pagination
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -78,25 +84,24 @@ const swiper = new Swiper(".swiper", {
 });
 
 // my Projects
-let cardOne = document.getElementById('card-1')
-let popUp = document.getElementById('pop-up')
-let popUpCrossBtn = document.getElementById('pop-up-cross-btn')
+let cardOne = document.getElementById("card-1");
+let popUp = document.getElementById("pop-up");
+let popUpCrossBtn = document.getElementById("pop-up-cross-btn");
 
-cardOne.addEventListener('click', ()=>{
-  popUp.classList.remove('hidden')
-  popUp.classList.add('grid')
-  popUp.classList.add('place-items-center')
-})
-popUpCrossBtn.addEventListener('click', ()=>{
-  popUp.classList.add('hidden')
-})
+cardOne.addEventListener("click", () => {
+  popUp.classList.remove("hidden");
+  popUp.classList.add("grid");
+  popUp.classList.add("place-items-center");
+});
+popUpCrossBtn.addEventListener("click", () => {
+  popUp.classList.add("hidden");
+});
 
 // Experience
 let exper = document.getElementById("exper");
 let myDate = new Date();
 let year = myDate.getFullYear();
 exper.innerHTML = `${year - 2022}+`;
-
 
 // Professional Skills
 let education = document.getElementById("education");
@@ -342,12 +347,12 @@ pricingList.forEach((e) => {
   });
 });
 
-let pricing = document.getElementById('pricing-card')
-let basic = document.getElementById('basic')
-let standard = document.getElementById('standard')
-let premium = document.getElementById('premium')
+let pricing = document.getElementById("pricing-card");
+let basic = document.getElementById("basic");
+let standard = document.getElementById("standard");
+let premium = document.getElementById("premium");
 
-basic.addEventListener('click', ()=>{
+basic.addEventListener("click", () => {
   pricing.innerHTML = `
      <!-- Pricing Head -->
               <div
@@ -549,10 +554,10 @@ basic.addEventListener('click', ()=>{
                  
                 </div>
               </div>
-  `
-})
+  `;
+});
 
-standard.addEventListener('click', () => {
+standard.addEventListener("click", () => {
   pricing.innerHTML = `
      <!-- Pricing Head -->
               <div
@@ -754,10 +759,10 @@ standard.addEventListener('click', () => {
                  
                 </div>
               </div>
-  `
-})
+  `;
+});
 
-premium.addEventListener('click', () => {
+premium.addEventListener("click", () => {
   pricing.innerHTML = `
      <!-- Pricing Head -->
               <div
@@ -959,59 +964,54 @@ premium.addEventListener('click', () => {
                  
                 </div>
               </div>
-  `
-})
-
-
+  `;
+});
 
 // Form Section
-let form = document.querySelector('form')
-let name = document.getElementById('name')
-let number = document.getElementById('number')
-let email = document.getElementById('email')
-let subject = document.getElementById('subject')
-let msg = document.getElementById('msg')
+let form = document.querySelector("form");
+let name = document.getElementById("name");
+let number = document.getElementById("number");
+let email = document.getElementById("email");
+let subject = document.getElementById("subject");
+let msg = document.getElementById("msg");
 
-function emptyInputs(){
-  name.value = ""
-  number.value = ""
-  email.value = ""
-  subject.value = ""
-  msg.value = ""
+function emptyInputs() {
+  name.value = "";
+  number.value = "";
+  email.value = "";
+  subject.value = "";
+  msg.value = "";
 }
 
-function sendEmail(){
-
-  const bodyMessage = `Name: ${name.value} <br> Phone Number: ${number.value} <br> Subject: ${subject.value} <br> Message: ${msg.value}`
+function sendEmail() {
+  const bodyMessage = `Name: ${name.value} <br> Phone Number: ${number.value} <br> Subject: ${subject.value} <br> Message: ${msg.value}`;
 
   Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "atiqahmad919@gmail.com",
-    Password : "61A0BEE5A3725EE8CAA1D4F4AD4EDD78CA32",
-    To : 'atiqahmad919@gmail.com',
-    From : 'atiqahmad919@gmail.com',
-    Subject : subject.value,
-    Body : bodyMessage
-}).then(
-  message => {if (message == 'OK'){
-    Swal.fire({
-      title: "Success!",
-      text: "Message Sent Successfully!",
-      icon: "success"
-    });
-    emptyInputs()
-  }
-  else{
-    Swal.fire({
-      title: "Oops...!",
-      text: "Something went wrong!",
-      icon: "error"
-    });
-  }
+    Host: "smtp.elasticemail.com",
+    Username: "atiqahmad919@gmail.com",
+    Password: "61A0BEE5A3725EE8CAA1D4F4AD4EDD78CA32",
+    To: "atiqahmad919@gmail.com",
+    From: "atiqahmad919@gmail.com",
+    Subject: subject.value,
+    Body: bodyMessage,
+  }).then((message) => {
+    if (message == "OK") {
+      Swal.fire({
+        title: "Success!",
+        text: "Message Sent Successfully!",
+        icon: "success",
+      });
+      emptyInputs();
+    } else {
+      Swal.fire({
+        title: "Oops...!",
+        text: "Something went wrong!",
+        icon: "error",
+      });
+    }
+  });
 }
-);
-}
-form.addEventListener('submit', (e)=>{
-  e.preventDefault()
-  sendEmail()
-})
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  sendEmail();
+});

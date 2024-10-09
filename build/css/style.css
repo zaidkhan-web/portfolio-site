@@ -705,6 +705,10 @@ h3{
   z-index: 50;
 }
 
+.m-5{
+  margin: 1.25rem;
+}
+
 .my-14{
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
@@ -783,6 +787,10 @@ h3{
   margin-top: 2rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .block{
   display: block;
 }
@@ -829,6 +837,10 @@ h3{
 
 .h-screen{
   height: 100vh;
+}
+
+.h-auto{
+  height: auto;
 }
 
 .min-h-60{
@@ -963,6 +975,10 @@ h3{
   gap: 0.5rem;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
 .gap-4{
   gap: 1rem;
 }
@@ -973,10 +989,6 @@ h3{
 
 .gap-7{
   gap: 1.75rem;
-}
-
-.gap-3{
-  gap: 0.75rem;
 }
 
 .overflow-auto{
@@ -1090,6 +1102,10 @@ h3{
 
 .p-8{
   padding: 2rem;
+}
+
+.p-6{
+  padding: 1.5rem;
 }
 
 .px-0{
