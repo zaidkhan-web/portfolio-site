@@ -84,15 +84,6 @@ var swiper = new Swiper(".swiper", {
 });
 
 // my Projects
-let cardOne = document.getElementById("card-1");
-let cardTwo = document.getElementById("card-2");
-let cardThree = document.getElementById("card-3");
-let cardFour = document.getElementById("card-4");
-let popUp = document.getElementById("pop-up");
-let popUpTwo = document.getElementById("pop-up-2");
-let popUpThree = document.getElementById("pop-up-3");
-let popUpFour = document.getElementById("pop-up-4");
-let popUpCrossBtn = document.getElementById("pop-up-cross-btn");
 // Select all cards and pop-ups
 const cards = document.querySelectorAll("#cardds li");
 const popUps = document.querySelectorAll("#pop-ups li");
